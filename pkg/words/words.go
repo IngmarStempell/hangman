@@ -5,9 +5,11 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"time"
 )
 
 func GetRandomWord() string {
+	rand.Seed(time.Now().UnixNano())
 
 	lines := readLines()
 	length := len(lines)

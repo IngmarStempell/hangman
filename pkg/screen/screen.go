@@ -27,7 +27,6 @@ func printGap() {
 
 func PrintIntro() {
 	printGap()
-	printGap()
 	printFile("intro.txt")
 
 }
@@ -37,31 +36,26 @@ func PrintTry(try int) {
 }
 
 func PrintWord(word string) {
-	printGap()
-	printGap()
 	pprint(word)
-	printGap()
 }
 
 func PrintLose(word string) {
 	printGap()
 	printGap()
+	printGap()
+	printGap()
 	printFile("lose.txt")
 	pprint("The Word was: ")
 	pprint(word)
-	printGap()
-	printGap()
 }
 func PrintWin(word string) {
+	printGap()
 	printGap()
 	printGap()
 	printGap()
 	printFile("win.txt")
 	pprint("The Word was: ")
 	pprint(word)
-	printGap()
-	printGap()
-	printGap()
 }
 
 func printFile(fileName string) {
